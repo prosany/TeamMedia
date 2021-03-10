@@ -4,7 +4,7 @@ import './Header.css';
 const Header = () => {
     return (
         <>
-            Header Page
+            <header>Player Media</header>
         </>
     );
 };

@@ -4,7 +4,9 @@ import './Footer.css';
 const Footer = () => {
     return (
         <>
-            Footer Page
+            <footer>
+                Hi
+            </footer>
         </>
     );
 };
