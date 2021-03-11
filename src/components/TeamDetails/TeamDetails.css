@@ -1,0 +1,98 @@
+.team-detail-body {
+    width: 100%;
+    height: 315px;
+    background: #6008d3;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.left-body {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+.left-body h1 {
+    font-family: 'RocknRoll One', sans-serif;
+}
+.right-body {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.right-body img {
+    width: 80%;
+    height: auto;
+}
+.team-descriptions {
+    margin: 10px 0;
+}
+
+
+
+.social-icons {
+    text-align: center;
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.com {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.socialTwitter {
+    background: #52A7E7;
+}
+.socialFacebook {
+    background: #1773EA;
+}
+.socialYoutube {
+    background: #F70000;
+}
+a span {
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (max-width: 1020px) {
+    .team-detail-body {
+        height: 300px;
+    }
+    .right-body img {
+        width: 100%;
+        height: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .right-body img {
+        width: 100%;
+        height: 260px;
+    }
+}
+@media (max-width: 600px) {
+    .team-detail-body {
+        height: auto;
+    }
+    .left-body {
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+    .right-body {
+        float: right;
+        width: 100%;
+        text-align: right;
+    }
+}

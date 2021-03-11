@@ -32,14 +32,39 @@
     text-align: center;
     margin: 10px 0 20px;
 }
-.team-description a {
-    background: #3A42FF;
-    color: #fff;
+.team-description button {
+    background: #fff;
+    color: #3A42FF;
     text-decoration: none;
     padding: 8px 15px;
     font-size: 14px;
-    border-radius: 2px;
+    border: 1px solid #3A42FF;
+    border-radius: 4px;
+    transition: background .5s;
+    cursor: pointer;
 }
-.team-description a span {
+.team-description button:hover {
+    background: #3A42FF;
+    color: #fff;
+}
+.team-description button span {
     font-size: 12px;
+}
+
+
+
+@media (max-width: 1020px) {
+    .teamdata {
+        width: 31%;
+    }
+}
+@media (max-width: 768px) {
+    .teamdata {
+        width: 48%;
+    }
+}
+@media (max-width: 486px) {
+    .teamdata {
+        width: 98%;
+    }
 }

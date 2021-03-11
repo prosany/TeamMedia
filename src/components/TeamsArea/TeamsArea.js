@@ -1,18 +1,18 @@
 import React from 'react';
 import './TeamsArea.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
+import { useHistory } from 'react-router-dom';
 
 const TeamsArea = (props) => {
     const teamData = props.teamList;
-    const {strTeam, strTeamBadge, strSport } = teamData;
+    const { strTeam, strTeamBadge, strSport, idTeam } = teamData;
     const iconCoffee = <FontAwesomeIcon icon={faLongArrowAltRight} />;
+    const history = useHistory();
+    const showTeamDetails = teamId => {
+        const url = `teaminfo/${teamId}`;
+        history.push(url);
+    }
     // console.log(teamData)
     return (
         <>
@@ -25,20 +25,7 @@ const TeamsArea = (props) => {
                     <p className="shortDes">Sports Type: {strSport}</p>
                 </div>
                 <div className="team-description">
-                    <Router>
-                        <Link to="/">Explore <span>{iconCoffee}</span></Link>
-                        <Switch>
-                            <Route path="/about">
-                                
-                            </Route>
-                            <Route path="/users">
-                                
-                            </Route>
-                            <Route path="/">
-                                
-                            </Route>
-                        </Switch>
-                    </Router>
+                    <button onClick={() => showTeamDetails(idTeam)}>Explore <span>{iconCoffee}</span></button>
                 </div>
             </div>
             {/* React Router */}

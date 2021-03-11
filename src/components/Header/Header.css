@@ -1,9 +1,12 @@
 header {
     line-height: 55px;
     text-align: center;
-    color: #fff;
     background: #191919;
-    text-transform: uppercase;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
     font-size: 25px;
     font-family: 'Akaya Kanadaka', sans-serif;
+    text-transform: uppercase;
 }

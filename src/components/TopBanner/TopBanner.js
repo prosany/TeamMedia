@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './TopBanner.css'
 
-const TopBanner = () => {
+const TopBanner = (props) => {
+    const {strTeamBadge, strTeam} = props.teamDetails;
     return (
         <>
             <div className="Top-banner">
                 <div className="content-inside-banner">
-                    Player Media
+                    <div className="teamlogo">
+                        <img src={strTeamBadge} alt={strTeam} />
+                    </div>
                 </div>
             </div>
         </>

@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <>
             <footer>
-                Hi Footer
+                Copyrights © 2021 TeamsMedia
             </footer>
         </>
     );

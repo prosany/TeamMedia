@@ -3,3 +3,13 @@
     margin: 0 auto;
     overflow: hidden;
 }
+.premier {
+    width: 100%;
+    font-size: 20px;
+}
+
+@media (max-width: 486px) {
+    .premier {
+        font-size: 14px;
+    }
+}

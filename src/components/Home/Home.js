@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import TeamsArea from '../TeamsArea/TeamsArea';
 import './Home.css';
-import TopBanner from '../TopBanner/TopBanner'
 
 const Home = () => {
     const [teamList, setTeamList] = useState([]);
@@ -13,7 +12,13 @@ const Home = () => {
     return (
         <>
             {/* Total {teamList.length} */}
-            <TopBanner></TopBanner>
+            <div className="Top-banner">
+                <div className="content-inside-banner">
+                    <div className="teamlogo">
+                        <h2 className="premier">Premier League Teams</h2>
+                    </div>
+                </div>
+            </div>
             <div className="box">
                 {
                     teamList.map(teamData => <TeamsArea teamList={teamData} key={teamData.idTeam}></TeamsArea>)
