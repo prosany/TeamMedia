@@ -13,3 +13,8 @@
         font-size: 14px;
     }
 }
+@media (max-width: 321px) {
+    .premier {
+        font-size: 13px;
+    }
+}

@@ -64,6 +64,9 @@
     }
 }
 @media (max-width: 486px) {
+    .team-logo img {
+        width: 50%;
+    }
     .teamdata {
         width: 98%;
     }
