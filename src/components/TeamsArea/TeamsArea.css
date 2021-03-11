@@ -28,3 +28,18 @@
 .shortDes {
     font-size: 14px;
 }
+.team-description {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+.team-description a {
+    background: #3A42FF;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 2px;
+}
+.team-description a span {
+    font-size: 12px;
+}
