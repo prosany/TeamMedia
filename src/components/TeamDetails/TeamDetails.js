@@ -49,9 +49,9 @@ const TeamDetails = () => {
                     <p>{strDescriptionEN}</p>
                 </div>
                 <div className="social-icons">
-                    <a href="https://twitter.com" className="socialTwitter com"><span><FontAwesomeIcon icon={faTwitter} /></span></a>
-                    <a href="https://twitter.com" className="socialFacebook com"><span><FontAwesomeIcon icon={faFacebookF} /></span></a>
-                    <a href="https://twitter.com" className="socialYoutube com"><span><FontAwesomeIcon icon={faYoutube} /></span></a>
+                    <a href="https://twitter.com/MahabubSunny4" className="socialTwitter com"><span><FontAwesomeIcon icon={faTwitter} /></span></a>
+                    <a href="https://facebook.com/mahabub.sunny.904" className="socialFacebook com"><span><FontAwesomeIcon icon={faFacebookF} /></span></a>
+                    <a href="https://www.youtube.com/user/jhankarmahbub" className="socialYoutube com"><span><FontAwesomeIcon icon={faYoutube} /></span></a>
                 </div>
             </div>
         </>
